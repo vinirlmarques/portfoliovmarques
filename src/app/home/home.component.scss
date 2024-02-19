@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kode+Mono:wght@400..700&display=swap');
+
+
+.home-container {
+    font-family: "Kode Mono", monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgb(1, 2, 14);
+}
+
+header{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.slogan{
+    width: 184px;
+}
+
+.headerRightSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    flex-direction: row;
+}
+
+.option:hover {
+    cursor: pointer;
+    color: rgb(93, 98, 156);
+    transition: color 0.5s ease;
+}
+
+.asideLeft{
+    width: 47%;
+}
+
+.asideRight{
+    width: 47%;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.asideLeftSide{
+    width: 100%;
+    background: rgb(1, 2, 14);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px dashed white;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.asideRightSide{
+    width: 100%;
+    background: rgb(1, 2, 14);
+    color: white;
+    border-left: 1px dashed white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.titleBiography{
+    margin-bottom: 10%;
+}
+
+.biographyText{
+    margin-right: 5%;
+}
+
+.biography{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Kode Mono", monospace;
+}
+
+.profileImage{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+p{
+    font-family: "Kode Mono", monospace;
+}
+
+.contact{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.contactImage{
+    margin-top: 5%;
+    width: 40px;
+    height:100%;
+    margin:0;
+}
+
+.projects{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.singleProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.singleProjectDescription{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.unifeiImage{
+    width: 40px;
+    height: auto;
+    margin-right: 2%;
+}
+
+.singleContact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 5px;
+    height: 40px;
+    width: 200%;
+}
+
+.linkContactLinkedin{
+    margin: 0;
+    width: 90%;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 3px;
+    border: 2px solid 	#0e76a8;
+    border-left: none;
+}
+
+.linkContact:hover{
+        color: rgb(93, 98, 156); 
+}
+
+
+.linkContactWhatsapp{
+    margin: 0;
+    width: 90%;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 3px;
+    border: 2px solid 	#25d366;
+    border-left: none;
+}
+
+.carousel-container {
+    width: 390px;
+    height: 290px;
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5%;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .carousel img {
+    width: 390px;
+    height: 290px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .indicator span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .indicator span.active {
+    background-color: rgb(93, 98, 156);
+  }
+
+  footer{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Kode Mono", monospace;
+    background: rgb(1, 2, 14);
+    color: white;
+    border-top: 1px solid white;
+  }
+
+  .technologies{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90px;
+  }
+
+  .technology{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .technologyImageContainer{
+    height: 60px;
+  }
+
+  .technologyImage{
+    width: 40px;
+    height: auto;
+  }
+
+  .progress-container {
+    width: 40%; /* Largura do contêiner da barra de progresso */
+    height: 40px; /* Altura do contêiner da barra de progresso */
+    position: relative; /* Posicionamento relativo para os filhos absolutos */
+    display: flex;
+    justify-content: center; /* Centraliza a barra de progresso */
+    align-items: center;
+    }
+
+    .progress-bar {
+        width: 100%; /* Largura total dentro do contêiner */
+        height: 5px;
+        background-color: #ddd; /* Cor de fundo para a parte não preenchida da barra */
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .progress-bar:before {
+        content: '';
+        width: 50%;
+        height: 5px;
+        background-color: #4CAF50; /* Cor de fundo para a parte preenchida da barra */
+        z-index: 1;
+    }
+    .progress-dot {
+        width: 20px; /* Largura das bolinhas */
+        height: 20px; /* Altura das bolinhas */
+        border-radius: 50%;
+        background-color: #bbb; /* Cor de fundo para as bolinhas não preenchidas */
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-50%); /* Desloca para a esquerda metade da largura da bolinha */
+    }
+
+/* Posicionando os pontos */
+.progress-dot:nth-child(1) { left: 0; background-color: #4CAF50; } /* Primeira bolinha preenchida */
+.progress-dot:nth-child(2) { left: 25%; background-color: #4CAF50; } /* Segunda bolinha preenchida */
+.progress-dot:nth-child(3) { left: 50%; } /* Terceira bolinha */
+.progress-dot:nth-child(4) { right: 0; } /* Quarta bolinha */
+
+/* Preenchimento da barra de progresso */
+.progress-dot:nth-child(-n+2) { background-color: #4CAF50; } /* Altera a cor dos dois primeiros pontos */
+
+.tooltip {
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: visible;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+}

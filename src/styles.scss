@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(1, 2, 14);
+}
+
+body, html, :root, :host{
+    margin:0;
+    padding: 0;
+    background: rgb(1, 2, 14);
+}

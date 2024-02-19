@@ -1,0 +1,142 @@
+<div class="home-container">
+    <header>
+        <img src="../../assets/slogan.png" class="slogan">
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div *ngFor="let level of levels; let i = index" class="progress-dot tooltip"
+                     [style.left]="(i * 33.33) + '%'"
+                     (mouseenter)="showTooltip(level)"
+                     (mouseleave)="hideTooltip()">
+                </div>
+            </div>
+            <div *ngIf="currentLevel" class="tooltiptext">{{ currentLevel }}</div>
+        </div>
+        
+        
+
+        <div class="headerRightSide">
+            <h3 class="option" (click)="goToGithub()" (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Github</h3>
+            <h3 class="option" (click)="goToCurriculum()" (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Currículo</h3>
+        </div>
+    </header>
+
+    <div class="content">
+        <aside class="asideLeft">
+            <div class="asideLeftSide">
+                <h1 class="titleBiography">Biografia</h1>
+                <div class="biography">
+
+                    <img src="../../assets/profile.jpg" alt="Profile" class="profileImage">
+
+                    <p class="biographyText">
+                        Olá! Meu nome é Vinícius Marques,<br><br>e sou estudante de Sistemas de Informação na Universidade Federal de Itajubá. Tenho uma paixão profunda por tecnologia e desenvolvimento full-stack, uma área na qual estou constantemente expandindo meus conhecimentos e habilidades. Minha jornada acadêmica e pessoal me permitiu adquirir uma base sólida em tecnologias-chave do desenvolvimento web, como Angular, PHP e MySQL.
+
+                    </p>
+                </div>
+
+                <div class="contact">
+                    <h1>Contato</h1>
+                    <div class="contactInfo">
+                        <div class="singleContact">
+                            <img src="../../assets/linkedin.png" alt="Linkedin" class="contactImage">
+                            <a href="https://www.linkedin.com/in/vinicius--marques/" target="_blank" class="linkContactLinkedin linkContact"
+                            (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Linkedin</a>
+                        </div>
+
+                        <div class="singleContact">
+                            <img src="../../assets/whatsapp.png" alt="Linkedin" class="contactImage">
+                            <a href="https://wa.me/5535997572131" target="_blank" class="linkContactWhatsapp linkContact"
+                            (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="asideRight">
+            <div class="asideRightSide">
+                <h1 class="titleProjects">Formação</h1>
+                <div class="projects">
+                    <div class="singleProject">
+                        <div class="singleProjectDescription">
+                            <img src="../../assets/unifei.png" alt="unifei" class="unifeiImage"> <span style="font-weight: bold;">Universidade federal de itajubá</span><br>
+                        </div>
+                        <span style="position:relative;left: 40px;">Sistemas de informação (2020-2025)</span>
+                    </div>
+                </div>
+                <br>
+                <h1 class="titleProjects">Cursos</h1>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img (click)="updateCarousel(1)" src="../../assets/cursoAngular.jpg" alt="Imagem 1">
+                        <img (click)="updateCarousel(2)" src="../../assets/cursoGithub.jpeg" alt="Imagem 2">
+                        <img (click)="updateCarousel(0)" src="../../assets/cursoPhp.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+    
+                <div class="indicator">
+                    <span [class.active]="currentImageIndex === 0"></span>
+                    <span [class.active]="currentImageIndex === 1"></span>
+                    <span [class.active]="currentImageIndex === 2"></span>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <h1 class="titleProjects">Tecnologias</h1>
+        <div class="technologies">
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/angular.png" alt="Angular" class="technologyImage"></div>
+                Angular
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/php.png" alt="PHP" class="technologyImage" style="position: relative; top: 15px;">
+                </div>
+                PHP
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/mysql.png" alt="MySQL" class="technologyImage">
+                </div>
+                MySQL
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/html.png" alt="HTML" class="technologyImage">
+                </div>
+                HTML
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/scss.png" style="position: relative; top: 15px;" alt="CSS" class="technologyImage">
+                </div>
+                SCSS
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/javascript.png" alt="Javascript" class="technologyImage">
+                </div>
+                JavaScript
+            </div>
+
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/typescript.png" alt="Typescript" class="technologyImage">
+                </div>
+                TypeScript
+            </div>
+            
+            <div class="technology">
+                <div class="technologyImageContainer"><img src="../../assets/github.png" alt="Github" class="technologyImage"></div>
+                Github
+            </div>
+            
+        </div>
+    </footer>
+</div>
+
+
