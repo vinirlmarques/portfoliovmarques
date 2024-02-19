@@ -284,18 +284,18 @@ p{
   }
 
   .progress-container {
-    width: 40%; /* Largura do contêiner da barra de progresso */
-    height: 40px; /* Altura do contêiner da barra de progresso */
-    position: relative; /* Posicionamento relativo para os filhos absolutos */
+    width: 40%; 
+    height: 40px;
+    position: relative;
     display: flex;
-    justify-content: center; /* Centraliza a barra de progresso */
+    justify-content: center;
     align-items: center;
     }
 
     .progress-bar {
-        width: 100%; /* Largura total dentro do contêiner */
+        width: 100%;
         height: 5px;
-        background-color: #ddd; /* Cor de fundo para a parte não preenchida da barra */
+        background-color: #ddd;
         position: relative;
         display: flex;
         align-items: center;
@@ -305,33 +305,33 @@ p{
         content: '';
         width: 50%;
         height: 5px;
-        background-color: #4CAF50; /* Cor de fundo para a parte preenchida da barra */
+        background-color: #4CAF50;
         z-index: 1;
     }
     .progress-dot {
-        width: 20px; /* Largura das bolinhas */
-        height: 20px; /* Altura das bolinhas */
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        background-color: #bbb; /* Cor de fundo para as bolinhas não preenchidas */
+        background-color: #bbb; 
         position: absolute;
         z-index: 2;
-        transform: translateX(-50%); /* Desloca para a esquerda metade da largura da bolinha */
+        transform: translateX(-50%);
     }
 
-/* Posicionando os pontos */
-.progress-dot:nth-child(1) { left: 0; background-color: #4CAF50; } /* Primeira bolinha preenchida */
-.progress-dot:nth-child(2) { left: 25%; background-color: #4CAF50; } /* Segunda bolinha preenchida */
-.progress-dot:nth-child(3) { left: 50%; } /* Terceira bolinha */
-.progress-dot:nth-child(4) { right: 0; } /* Quarta bolinha */
 
-/* Preenchimento da barra de progresso */
-.progress-dot:nth-child(-n+2) { background-color: #4CAF50; } /* Altera a cor dos dois primeiros pontos */
+.progress-dot:nth-child(1) { left: 0; background-color: #4CAF50; }
+.progress-dot:nth-child(2) { left: 25%; background-color: #4CAF50; }
+.progress-dot:nth-child(3) { left: 50%; }
+.progress-dot:nth-child(4) { right: 0; }
+
+
+.progress-dot:nth-child(-n+2) { background-color: #4CAF50; }
 
 .tooltip {
     cursor: pointer;
 }
 
-/* Tooltip text */
+
 .tooltiptext {
     visibility: visible;
     width: 120px;
@@ -342,7 +342,7 @@ p{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 30px; /* Ajuste a posição vertical conforme necessário */
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 0.3s;

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   private originalTexts = new Map<EventTarget, string>();
@@ -14,9 +14,9 @@ export class HomeComponent {
   currentLevel = '';
 
   images = [
-    "../../assets/cursoAngular.jpg",
-    "../../assets/cursoGithub.jpeg",
-    "../../assets/cursoPhp.jpg"
+    '../../assets/cursoAngular.jpg',
+    '../../assets/cursoGithub.jpeg',
+    '../../assets/cursoPhp.jpg',
   ];
 
   ngOnInit() {
@@ -26,14 +26,15 @@ export class HomeComponent {
 
   updateCarousel(index: number) {
     this.currentImageIndex = index;
-    const carousel = document.querySelector(".carousel") as HTMLElement;
+    const carousel = document.querySelector('.carousel') as HTMLElement;
     carousel.style.transform = `translateX(-${this.currentImageIndex * 100}%)`;
     this.restartCarouselInterval();
   }
 
   startCarousel() {
     this.intervalId = setInterval(() => {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+      this.currentImageIndex =
+        (this.currentImageIndex + 1) % this.images.length;
       this.updateCarousel(this.currentImageIndex);
     }, 3000);
   }
@@ -44,8 +45,9 @@ export class HomeComponent {
   }
 
   private scrambleAll() {
-    // Selecione todos os elementos que você deseja embaralhar inicialmente
-    const elements = document.querySelectorAll('.option, .titleBiography, .linkContact, .titleProjects');
+    const elements = document.querySelectorAll(
+      '.option, .titleBiography, .linkContact, .titleProjects'
+    );
 
     elements.forEach((element) => {
       this.scrambleTextOnInit(element as HTMLElement);
@@ -62,12 +64,12 @@ export class HomeComponent {
 
     const scramble = () => {
       if (Date.now() >= endScramble) {
-        element.textContent = originalText; // Restaura o texto original
+        element.textContent = originalText;
         return;
       }
       element.textContent = originalText
         .split('')
-        .map(char => Math.random() < 0.5 ? this.randomChar() : char)
+        .map((char) => (Math.random() < 0.5 ? this.randomChar() : char))
         .join('');
       requestAnimationFrame(scramble);
     };
@@ -79,7 +81,10 @@ export class HomeComponent {
   }
 
   goToCurriculum() {
-    window.open('https://drive.google.com/file/d/1Ou9mL5sINeAapxTYrKksifAJ2SAtkXO7/view?usp=sharing', '_blank');
+    window.open(
+      'https://drive.google.com/file/d/1Ou9mL5sINeAapxTYrKksifAJ2SAtkXO7/view?usp=sharing',
+      '_blank'
+    );
   }
 
   scrambleText(event: MouseEvent): void {
@@ -93,12 +98,12 @@ export class HomeComponent {
 
     const scramble = () => {
       if (Date.now() >= endScramble) {
-        element.textContent = originalText; // Restaura o texto original
+        element.textContent = originalText;
         return;
       }
       element.textContent = originalText
         .split('')
-        .map(char => Math.random() < 0.5 ? this.randomChar() : char)
+        .map((char) => (Math.random() < 0.5 ? this.randomChar() : char))
         .join('');
       requestAnimationFrame(scramble);
     };
@@ -113,7 +118,8 @@ export class HomeComponent {
   }
 
   private randomChar(): string {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const chars =
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     return chars.charAt(Math.floor(Math.random() * chars.length));
   }
 
