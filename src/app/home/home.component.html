@@ -18,7 +18,8 @@
         <div class="headerRightSide">
             <h3 class="option" 
             (mouseenter)="showImage($event); scrambleText($event)" 
-            (mouseleave)="hideImage(); restoreText($event)">
+            (mouseleave)="hideImage(); restoreText($event)"
+            (click)="goToGithub()">
             Github
         </h3>
         <img id="githubImage" src="../../assets/githubactivity.png" style="display: none; position: absolute;" />
