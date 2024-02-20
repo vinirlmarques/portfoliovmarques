@@ -29,6 +29,7 @@ export class HomeComponent {
       // Você pode ajustar os valores 10 e 10 para mudar o offset da imagem em relação ao cursor
       image.style.left = `${event.clientX -225}px`;
       image.style.top = `${event.clientY + 25}px`;
+      image.style.zIndex = '1000';
     }
   }
 
