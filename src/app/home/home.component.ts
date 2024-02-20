@@ -21,6 +21,24 @@ export class HomeComponent {
     '../../assets/cursoPhp.jpg',
   ];
 
+  showImage(event: MouseEvent): void {
+    const image = document.getElementById('githubImage') as HTMLImageElement;
+    if (image) {
+      image.style.display = 'block';
+      // Ajusta a posição da imagem em relação ao cursor
+      // Você pode ajustar os valores 10 e 10 para mudar o offset da imagem em relação ao cursor
+      image.style.left = `${event.clientX -225}px`;
+      image.style.top = `${event.clientY + 10}px`;
+    }
+  }
+
+  hideImage(): void {
+    const image = document.getElementById('githubImage');
+    if (image) {
+      image.style.display = 'none';
+    }
+  }
+
   ngOnInit() {
     this.scrambleAll();
     this.startCarousel();

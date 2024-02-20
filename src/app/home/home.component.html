@@ -16,8 +16,13 @@
         
 
         <div class="headerRightSide">
-            <h3 class="option" (click)="goToGithub()" (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Github</h3>
-            <h3 class="option" (click)="goToCurriculum()" (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Currículo</h3>
+            <h3 class="option" 
+            (mouseenter)="showImage($event); scrambleText($event)" 
+            (mouseleave)="hideImage(); restoreText($event)">
+            Github
+        </h3>
+        <img id="githubImage" src="../../assets/githubactivity.png" style="display: none; position: absolute;" />
+                    <h3 class="option" (click)="goToCurriculum()" (mouseenter)="scrambleText($event)" (mouseleave)="restoreText($event)">Currículo</h3>
         </div>
     </header>
 
