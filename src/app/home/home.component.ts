@@ -84,7 +84,7 @@ export class HomeComponent {
 
   goToCurriculum() {
     window.open(
-      'https://drive.google.com/file/d/1Ou9mL5sINeAapxTYrKksifAJ2SAtkXO7/view?usp=sharing',
+      'https://drive.google.com/file/d/1S2ylywF8rUhEpWAv7KBAUVzfE-dnbuvg/view?usp=sharing',
       '_blank'
     );
   }
