@@ -28,7 +28,7 @@ export class HomeComponent {
       // Ajusta a posição da imagem em relação ao cursor
       // Você pode ajustar os valores 10 e 10 para mudar o offset da imagem em relação ao cursor
       image.style.left = `${event.clientX -225}px`;
-      image.style.top = `${event.clientY + 10}px`;
+      image.style.top = `${event.clientY + 25}px`;
     }
   }
 
