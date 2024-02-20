@@ -30,6 +30,10 @@ header{
     justify-content: space-between;
     width: 20%;
     flex-direction: row;
+
+    @media screen and (max-width: 768px){
+        width: 50%;
+    }
 }
 
 .option:hover {
@@ -40,11 +44,18 @@ header{
 
 .asideLeft{
     width: 47%;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 }
 
 .asideRight{
     width: 47%;
 
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 }
 
 .content{
@@ -53,6 +64,10 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 }
 
 .asideLeftSide{
@@ -65,6 +80,10 @@ header{
     border-right: 1px dashed white;
     padding-bottom: 30px;
     padding-top: 15px;
+
+    @media screen and (max-width: 768px){
+        border-right: none;
+    }
 }
 
 .asideRightSide{
@@ -77,6 +96,10 @@ header{
     align-items: center;
     padding-bottom: 30px;
     padding-top: 15px;
+
+    @media screen and (max-width: 768px){
+        border-left: none;
+    }
 }
 
 .titleBiography{
@@ -210,6 +233,12 @@ p{
     overflow: hidden;
     position: relative;
     margin-bottom: 5%;
+
+    @media screen and (max-width: 768px){
+        width: 350px;
+        height: 261px;
+        left: 5%;
+    }
   }
   
   .carousel {
@@ -223,7 +252,13 @@ p{
     height: 348px;
     cursor: pointer;
     border-radius: 10px;
-  }
+
+    @media screen and (max-width: 768px){
+        width: 361px;
+        height: 261px;
+    }
+
+}
   
   .indicator {
     display: flex;
@@ -265,6 +300,11 @@ p{
     justify-content: space-between;
     width: 90%;
     height: 90px;
+
+    @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+        
+    }
   }
 
   .technology{
@@ -272,6 +312,12 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 10%;
+
+    @media screen and (max-width: 768px){
+        width: 20%;
+        margin-bottom: 15px;
+    }
   }
 
   .technologyImageContainer{

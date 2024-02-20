@@ -2,7 +2,7 @@
     <header>
         <img src="../../assets/slogan.png" class="slogan">
 
-        <div class="progress-container">
+        <div class="progress-container" *ngIf="!isMobile">
             <div class="progress-bar">
                 <div *ngFor="let level of levels; let i = index" class="progress-dot tooltip"
                      [style.left]="(i * 33.33) + '%'"

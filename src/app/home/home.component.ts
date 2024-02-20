@@ -13,6 +13,8 @@ export class HomeComponent {
   levels = ['Trainee', 'Júnior', 'Pleno', 'Sênior'];
   currentLevel = '';
 
+  isMobile = window.innerWidth < 768;
+
   images = [
     '../../assets/cursoAngular.jpg',
     '../../assets/cursoGithub.jpeg',
