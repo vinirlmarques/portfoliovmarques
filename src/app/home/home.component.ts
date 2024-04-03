@@ -19,6 +19,7 @@ export class HomeComponent {
     '../../assets/cursoAngular.jpg',
     '../../assets/cursoGithub.jpeg',
     '../../assets/cursoPhp.jpg',
+    '../../assets/cursoReact.jpg,
   ];
 
   showImage(event: MouseEvent): void {
