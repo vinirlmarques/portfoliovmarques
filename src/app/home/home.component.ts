@@ -16,6 +16,7 @@ export class HomeComponent {
   isMobile = window.innerWidth < 768;
 
   images = [
+    '../../assets/cursoWeb.jpg',
     '../../assets/cursoAngular.jpg',
     '../../assets/cursoGithub.jpeg',
     '../../assets/cursoPhp.jpg',
@@ -104,7 +105,7 @@ export class HomeComponent {
 
   goToCurriculum() {
     window.open(
-      'https://drive.google.com/file/d/1z3VlFgRub68hSZ-gRkWU7jYdRh8eQwRV/view?usp=sharing',
+      'https://drive.google.com/file/d/1xkpOvgVPjTt_MHT962isaqF9_3hyaoGr/view?usp=sharing',
       '_blank'
     );
   }

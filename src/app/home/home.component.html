@@ -76,10 +76,11 @@
 
                 <div class="carousel-container">
                     <div class="carousel">
-                        <img (click)="updateCarousel(1)" src="../../assets/cursoAngular.jpg" alt="Imagem 1">
-                        <img (click)="updateCarousel(2)" src="../../assets/cursoGithub.jpeg" alt="Imagem 2">
-                        <img (click)="updateCarousel(3)" src="../../assets/cursoPhp.jpg" alt="Imagem 3">
-                      <img (click)="updateCarousel(0)" src="../../assets/cursoReact.jpg" alt="Imagem 3">
+                        <img (click)="updateCarousel(1)" src="../../assets/cursoWeb.jpg" alt="Imagem 1">
+                        <img (click)="updateCarousel(2)" src="../../assets/cursoAngular.jpg" alt="Imagem 2">
+                        <img (click)="updateCarousel(3)" src="../../assets/cursoGithub.jpeg" alt="Imagem 3">
+                        <img (click)="updateCarousel(4)" src="../../assets/cursoPhp.jpg" alt="Imagem 4">
+                        <img (click)="updateCarousel(0)" src="../../assets/cursoReact.jpg" alt="Imagem 5">
                     </div>
                 </div>
     
@@ -87,7 +88,8 @@
                     <span [class.active]="currentImageIndex === 0"></span>
                     <span [class.active]="currentImageIndex === 1"></span>
                     <span [class.active]="currentImageIndex === 2"></span>
-                  <span [class.active]="currentImageIndex === 3"></span>
+                    <span [class.active]="currentImageIndex === 3"></span>
+                    <span [class.active]="currentImageIndex === 4"></span>
                 </div>
 
             </div>
