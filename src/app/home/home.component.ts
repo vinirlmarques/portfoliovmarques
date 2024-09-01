@@ -105,7 +105,7 @@ export class HomeComponent {
 
   goToCurriculum() {
     window.open(
-      'https://drive.google.com/file/d/1z3VlFgRub68hSZ-gRkWU7jYdRh8eQwRV/view?usp=sharing',
+      'https://drive.google.com/file/d/1cSB5baE8BXs6yTypyX2vZ7vh9-VCL_Og/view?usp=sharing',
       '_blank'
     );
   }
